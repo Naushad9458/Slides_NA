@@ -13,18 +13,740 @@
 		<!-- Theme used for syntax highlighted code -->
 		<link rel="stylesheet" href="plugin/highlight/monokai.css">
 	</head>
+	<style type="text/css">
+		.comparison p {
+		  text-align: left;
+		  font-size:80%;
+		}
+
+		.comparison2 p {
+		  text-align: left;
+		  font-size:80%;
+		}
+		.comparison2 {
+			margin-left: 45%;
+			margin-top: 5%;
+		}
+		.prompt_engg p {
+		  text-align: left;
+		  font-size:80%;
+		}
+		.prompt_engg {
+			margin-left: 45%;
+			margin-top: 5%;
+
+		}
+		.limitations p {
+		  text-align: left;
+		  font-size:80%;
+		}
+		.contrastive p {
+		  text-align: left;
+		  font-size:80%;
+		}
+		.contrastive {
+			margin-left: 45%;
+			margin-top: 5%;
+
+		}
+
+		.bias p {
+		  text-align: left;
+		  font-size:80%;
+		}
+		.bias {
+			margin-left: 45%;
+			margin-top: 5%;
+
+		}
+	  </style>
 	<body>
 		<div class="reveal">
 			<div class="slides">
-				<section>Slide 1</section>
-				<section>Slide 2
-						<aside class="notes">
-						<p>Some notes</p>
-						</aside>
-						<p>Some slide text</p>
-						<aside class="notes">
-						<p>and some more notes</p>
-					</aside>
+				<section data-background-image="http://localhost:8000/examples/assets/insight_background.png">
+					<aside class="notes">
+						Shhh, these are your private notes 📝
+					  </aside>
+					
+					<p style="text-align: left;margin-left:-5%; margin-top:0%; font-size: 30px;"><b>Augmented Reality based Conversational Search Approach </b></p>
+					<p style="margin-left:-35%; ; font-size: 30px;"><b>for Lifelog Information Retrieval</b></p>
+					<p style="text-align: left;margin-left:22%; margin-top:0%; font-size: 25px;">Naushad Alam</p>
+					<p style="text-align: left;margin-left:0%; margin-top:0%; font-size: 25px;">Supervised by: Dr. Cathal Gurrin & Dr. Yvette Graham</p>
+
+				</section>
+
+				<!--Slide 1 -->
+				<section data-state="make-it-pop" data-auto-animate data-background-color="white">
+					
+
+					<img data-src="http://localhost:8000/examples/assets/brain.png" width="50%" align="left" style="margin-left: -5%;margin-right: 5%;">
+					<p class="fragment" data-fragment-index="1" style="margin-top: 5%; text-align: left; margin-right: -10%;">Human Brain is fascinating and does myraid number of things!</p>
+
+					<p class="fragment" data-fragment-index="2" style="text-align: left; margin-right: -10%;">From enabling us to think, learn, create, and feel emotions.</p>
+
+					<p class="fragment" data-fragment-index="3" style="text-align: left; margin-right: -10%;">To controlling every blink, breath, and all vital functions of our body.</p>
+
+					
+
+				
+				</section>
+				<!--Slide 1 -->
+
+
+				<!--Slide 2 -->
+				<section data-state="make-it-pop" data-auto-animate data-background-color="white">
+					
+
+					<img data-src="http://localhost:8000/examples/assets/human_memory.png" width="40%" align="left" style="margin-right: 5%; margin-left: -5%;">
+					<p class="fragment" data-fragment-index="1" style="margin-top: 5%;text-align: left; margin-right: -10%;">Human Memory is a vital cognitive ability.</p>
+					<p class="fragment" data-fragment-index="2" style="text-align: left; margin-right: -10%;">However, memory is not always reliable.</p>
+					<p class="fragment" data-fragment-index="3" style="text-align: left; margin-right: -10%;">Humans deal with memory lapses almost on a daily basis.</p>
+					
+				</section>
+				<!--Slide 2 -->
+
+
+
+				<section data-auto-animate data-background-image="http://localhost:8000/examples/assets/Dementia-resized.webp">
+				<p class="fragment" data-fragment-index="1" style="text-align: left; margin-top: 20%;margin-left: 80%; margin-right: -5%; color: black;">There are over <b>50 million</b> people worldwide living with dementia today.</p>
+				</section>
+
+				<section data-auto-animate data-background-image="http://localhost:8000/examples/assets/Dementia-resized.webp">
+				<p class="fragment" data-fragment-index="1" style="text-align: left; margin-top: 20%;margin-left: 80%; margin-right: -5%; color: black;">Someone in the world develops dementia every <b>3 seconds</b>.</p>
+				</section>
+
+				<section data-auto-animate data-background-image="http://localhost:8000/examples/assets/Dementia-resized.webp">
+					<p class="fragment fade-in-then-out" data-fragment-index="1" style="text-align: left; margin-top: 20%;margin-left: 80%; margin-right: -5%; color: black;">The number is estimated to go up to <b>152 million</b> by the year 2050.</p>
+				</section>
+
+				<section data-auto-animate data-background-image="http://localhost:8000/examples/assets/Dementia-resized.webp">
+					<p class="fragment fade-in-then-out" data-fragment-index="1" style="text-align: left; margin-top: 20%;margin-left: 80%; margin-right: -5%; color: black;"> Dementia Care economic impact is upwards of <b>$1 Trillion</b> US Dollars.</p>
+				</section>
+
+				
+				
+				
+
+				
+
+				<!--Slide 4 -->
+				<section>
+					<p  style="margin-left: -20%; margin-right: -20%;">Is there a feasibility of a technology based intervention?</p>
+				</section>
+				<!--Slide 4 -->
+
+				<!--Slide 5 -->
+				<section data-background-color="white" data-auto-animate>
+					<h3>Lifelogs</h3>
+				</section>
+				<!--Slide 5 -->
+
+				<!--Slide 6 -->
+				<section data-background-color="white" data-auto-animate>
+					<h3 style="margin-top: -250px;">Lifelogs</h3>
+					<p class="fragment" data-fragment-index="1">Egocentric Images + Sensor Data</p>
+
+					<p class="fragment" data-fragment-index="2">
+
+						<img data-src="http://localhost:8000/examples/assets/narrativeclip.jpeg" width="50%" align="left" style="margin-left: -10%;">
+						
+					</p>
+
+					<p class="fragment" data-fragment-index="3">
+
+						<img data-src="http://localhost:8000/examples/assets/apple_watch.webp" width="55%" align="right" style="margin-right: -10%;">
+						
+					</p>
+				</section>
+				<!--Slide 6 -->
+
+				<!--Slide 7 -->
+				<section data-background-color="white" data-auto-animate>
+					<h3 style="margin-top: -250px;">Lifelogs</h3>
+					<p class="fragment" data-fragment-index="1">Egocentric Images + Sensor Data</p>
+
+					<p class="fragment" data-fragment-index="2">
+
+						<img data-src="http://localhost:8000/examples/assets/lifelog_example.png" width="80%" >
+
+					</p>
+
+					<p class="fragment" data-fragment-index="3">						
+						<img data-src="http://localhost:8000/examples/assets/sensor_data.png" width="50%" >
+					</p>
+				</section>
+				<!--Slide 7 -->
+
+				<!--Slide 8-->
+				<section>
+					How can lifelogs help in dealing with forgetfulness?
+				</section>
+				<!--Slide 8-->
+
+				<!--Slide 9-->
+				<section data-background-color="white">
+					<p class="fragment" data-fragment-index="1" style="margin-left: -10%; margin-right: -10%;"> Lifelogs can be considered a rich multimodal digital diary capturing a person's daily life experience</p>
+					<p class="fragment" data-fragment-index="2" style="margin-left: -10%; margin-right: -10%;"> 'Efficient' data retrieval from lifelogs can to some extent aid in recalling events from one's life.</p>
+
+					<p class="fragment" data-fragment-index="3" style="color: cadetblue; font-style: italic;"> Where are my keys?</p>
+					<p class="fragment" data-fragment-index="4" style="color: cadetblue; font-style: italic;"> Have i met this person before?</p>
+					<p class="fragment" data-fragment-index="5" style="color: cadetblue; font-style: italic;"> When did i last visit this place?</p>
+
+				</section>
+				<!--Slide 9-->
+
+
+				<!--Slide 10-->
+				<section>
+					<p style="margin-left: -10%; margin-right: -10%;">What are the qualities of an ideal lifelog retrieval system?</p>
+				</section>
+				<!--Slide 10-->
+
+				<section data-background-color="white">
+					<p class="fragment" data-fragment-index="1" style="margin-left: -10%; margin-right: -10%;"> The mode of interaction should be intuitive and as simple as interacting with another human being.</p>
+					<p class="fragment" data-fragment-index="2" style="margin-left: -10%; margin-right: -10%;"> 'Cue generation' mechanism to aid faster retrieval.</p>
+					<p class="fragment" data-fragment-index="3" style="margin-left: -10%; margin-right: -10%;"> Ubiquitous system.</p>
+				</section>
+
+				<!--Slide 11-->
+				<section data-background-color="white">
+					<p style="margin-left: -5%; margin-right: -5%; text-align:left"><b>RQ1:</b> Using queries expressed in natural language, how best
+					can we design and build an interactive lifelog retrieval system capable of satisfying a wide
+					range of user information needs?</p>
+				</section>
+				<!--Slide 11-->
+
+				<!--Slide 12-->
+				<section data-background-color="white" data-auto-animate>
+					<h3>Memento 1.0</h3>
+					<p class="fragment" data-fragment-index="1"> A prototype lifelog search engine developed to be participated in the Lifelog Search Challenge 2021</p>
+					<p class="fragment" data-fragment-index="2"> Lifelog Search Challenge is an annual global benchmarking competition for lifelog information retrieval.</p>
+				</section>
+				<!--Slide 12-->
+
+								
+				<section data-background-color="white" data-auto-animate>
+					<h3>Lifelog Search Challenge</h3>
+					<p class="fragment" data-fragment-index="1">Annual global competition running since 2018.</p>
+					<p class="fragment" data-fragment-index="2">Each query consists of 6 hints, which are revealed at 30 seconds interval.</p>
+					<p class="fragment" data-fragment-index="3" style="color: cadetblue; font-style: italic;">There was a while t-shirt for sale</p>
+					<p class="fragment" data-fragment-index="4" style="color: cadetblue; font-style: italic;">I remember it said I love bicycle</p>
+					<p class="fragment" data-fragment-index="5" style="color: cadetblue; font-style: italic;">It was in a bicycle and parts store</p>
+					<p class="fragment" data-fragment-index="6" style="color: cadetblue; font-style: italic;">A big sale, bicycles were half price</p>
+					<p class="fragment" data-fragment-index="7" style="color: cadetblue; font-style: italic;">It was in the afternoon on the 15th May 2015</p>
+				</section>
+
+
+				<!--Slide 13-->
+
+				<section data-background-color="white" data-auto-animate>
+					<h3>Memento 1.0</h3>
+					<img data-src="http://localhost:8000/examples/assets/clip_arch.png" width="80%">
+					<p style="font-size: 20px;">CLIP Contrastive Training</p>
+					
+				</section>
+
+				<!--Slide 13-->
+				<section data-background-color="white" data-auto-animate>
+					<h3 style="margin-top:0%;">Memento 1.0</h3>
+					<p class="fragment" data-fragment-index="1"> 
+						<img data-src="http://localhost:8000/examples/assets/userInterface_memento_1.png" align="left" width="55%" style="margin-right: 5%;">
+					</p>
+
+					<p class="fragment" data-fragment-index="1"> 
+						<img data-src="http://localhost:8000/examples/assets/data_filtering.png" align="left"width="55%" style="margin-right: 5%;">
+					</p>
+
+					<p class="fragment" data-fragment-index="2" style="margin-top: 5%; margin-right: -10%; font-size: 30px; text-align: left ;">Supports queries expressed in natural language</p>
+					<p class="fragment" data-fragment-index="3" style="margin-right: -10%;font-size: 30px; text-align: left ">Temporal Search Functionality</p>
+					<p class="fragment" data-fragment-index="4" style="margin-right: -10%;font-size: 30px; text-align: left ">Faceted Data filtering cum data visualization interface</p>
+
+					
+					
+				</section>
+				
+
+				<!--Slide 14-->
+				<section data-background-color="white" data-auto-animate>
+					<h3>Memento 1.0</h3>
+					<img data-src="http://localhost:8000/examples/assets/lsc21_arch.png" width="85%">
+					<p style="font-size: 20px;">System Architecture of Memento 1.0 using the ViT-B/32 CLIP Model</p>
+					
+				</section>
+				<!--Slide 14-->
+
+				<!--Slide 15-->
+				<section data-background-color="white" data-auto-animate>
+					<h3>Memento 1.0</h3>
+					<img data-src="http://localhost:8000/examples/assets/correctVsIncorrect.png" width="85%">
+					<p style="font-size: 20px; margin-top: -3%;">Number of Correct and Incorrect submitted by all 15 teams at LSC 2021.</p>
+
+					<p>Ranked 6th out of 15 competing systems</p>
+					
+				</section>
+				<!--Slide 15-->
+
+				<!--Slide 16-->
+				<section data-background-color="white" data-auto-animate>
+					<h3>Memento 2.0</h3>
+					<img data-src="http://localhost:8000/examples/assets/lsc22_sys_arch.png" width="60%">
+					<p style="font-size: 20px;">System Architecture of Memento 2.0 using an ensemble of ViT-L/14 and ResNet50x64 CLIP Models</p>
+					
+				</section>
+				<!--Slide 16-->
+
+				<!--Slide 17-->
+				<section data-background-color="white" data-auto-animate>
+					<h3>Memento 2.0</h3>
+					<p class="fragment" data-fragment-index="1">
+						<img data-src="http://localhost:8000/examples/assets/lsc22_evaluation_results.png" width="75%">
+					</p>
+					<p class="fragment" data-fragment-index="1" style="font-size: 20px;">Performance of the models on Hit@K metric using multiple K values (1, 3, 5, 10, 20 and 50).</p>
+				</section>
+				<!--Slide 17-->
+
+				<section data-background-color="white" data-auto-animate>
+					<h3>Memento 2.0</h3>
+					<p class="fragment" data-fragment-index="1">
+						<img data-src="http://localhost:8000/examples/assets/lsc22_res.jpg" width="95%">
+					</p>
+					<p class="fragment" data-fragment-index="1">Memento 2.0 stood at 3rd position overall in LSC 2022</p>
+				</section>
+
+				<!--Slide 18-->
+				<section data-background-color="white" data-auto-animate>
+					<h3>DCU at the NTCIR-16 Lifelog Task</h3>
+					<p>Lifelog Semantic Access Task - LSAT</p>
+					<p class="fragment" data-fragment-index="1">Task: Given a query in natural language find a ranked list of relevant images from the dataset.</p>
+
+					<p class="fragment" data-fragment-index="2" style="color: cadetblue; font-style: italic;">Find examples when i was eating sushi</p>
+
+					<p class="fragment" data-fragment-index="3">
+
+						<img data-src="http://localhost:8000/examples/assets/p@k_dcumemento.png" align="left" width="55%" style="margin-right: 5%;">
+						
+
+					</p>
+
+					<p class="fragment" data-fragment-index="3" style="margin-top: 5%; margin-right: -10%; font-size: 30px; text-align: left ;">Best performing system at the LSAT-Automatic Task</p>
+					<p class="fragment" data-fragment-index="3" style="margin-right: -10%; font-size: 30px; text-align: left ;"><b>~40%</b> relevant images retrieved</p>
+					<p class="fragment" data-fragment-index="3" style="margin-right: -10%; font-size: 30px; text-align: left ;">Mean Average Precision - <b>0.3605</b></p>
+					<p class="fragment" data-fragment-index="3" style="margin-right: -10%; font-size: 30px; text-align: left ;">Mean Reciprocal Rank - <b>0.7199</b></p>
+				</section>
+				<!--Slide 18-->
+
+
+				<!--Slide 19-->
+				<section data-background-color="white" data-auto-animate>
+					<h3>FineTuning CLIP Model for Lifelog Retrieval</h3>
+					<p>Lifelog Question Answering Dataset - LLQA</p>
+					<img data-src="http://localhost:8000/examples/assets/llqa.png" align="left" width="75%">
+					<p class="fragment" data-fragment-index="1" style="margin-top: 5%; margin-right: -10%; font-size: 30px; text-align: left ;">Consists of ~11K image-caption pairs describing daily activities from within 85 days of data.</p>
+				</section>
+				<!--Slide 19-->
+
+				<!--Slide 20-->
+				<section data-background-color="white" data-auto-animate>
+					<h3>FineTuning CLIP Model for Lifelog Retrieval</h3>
+					<p>Modified Loss function</p>
+
+					<img data-src="http://localhost:8000/examples/assets/modified_loss.png" width="75%">
+					
+				</section>
+
+				<section data-background-color="white" data-auto-animate>
+					
+					<p style="margin-left: -5%; margin-right: -5%;">Comparing performance of zero-shot model vs fine-tuned model using only visual context</p>
+
+					<img data-src="http://localhost:8000/examples/assets/image_only1.png" width="75%">
+					<p style="font-size: 20px;">Table 1: Hit@K for zero-shot CLIP Model</p>
+					
+					<img data-src="http://localhost:8000/examples/assets/image_only2.png" width="75%">
+					<p style="font-size: 20px;">Table 2: Hit@K for fine-tuned CLIP Model on LLQA dataset</p>
+					
+				</section>
+
+				<section data-background-color="white" data-auto-animate>
+					
+					<p style="margin-left: -5%; margin-right: -5%;">Comparing performance of zero-shot model vs fine-tuned model using all available information</p>
+
+					<img data-src="http://localhost:8000/examples/assets/multimodal_eval.png" width="75%">
+					<p style="font-size: 20px;">Table 1: Hit@K for the fine-tuned CLIP Model using all information from the query</p>
+					
+
+					
+				</section>
+				<!--Slide 20-->
+
+				<!--Slide 21-->
+				<section data-background-color="white" data-auto-animate>
+					<p style="margin-left: -5%; margin-right: -5%; text-align:left"><b>RQ 2:</b> What is the most effective method of improving lifelog
+						information retrieval systems capable of asking clarifying questions and can such a method
+						go beyond the capability of textual query-based systems?</p>
+
+					
+					
+				</section>
+				<!--Slide 21-->
+
+				<!--Slide 22-->
+				<section data-background-color="white" data-auto-animate>
+					<p style="margin-left: -5%; margin-right: -5%; text-align:left"><b>RQ 2.1:</b> What is the most effective method of generating commonsense grounded
+						story plots from lifelog datasets that succinctly and accurately summarize the events
+						taking place in that dataset? </p>	
+				</section>
+				<!--Slide 22-->
+
+				<!--Slide 23-->
+				<section data-background-color="white" data-auto-animate>
+					<h3>RQ 2.1</h3>
+
+					<p class="fragment" data-fragment-index="1" style="margin-left: -5%; margin-right: -5%;">We adopt an object-based unsupervised story generation approach.</p>
+
+					<p class="fragment" data-fragment-index="2">
+						<img data-src="http://localhost:8000/examples/assets/vinvl_obj_attr.jpg" width="55%">
+					</p>
+					<p class="fragment" data-fragment-index="2" style="font-size: 20px;">Objects and Attributes detection using VinVL model.</p>
+
+					
+				</section>
+				<!--Slide 23-->
+
+				<!--Slide 24-->
+				<section data-background-color="white" data-auto-animate>
+					
+					
+					<p class="fragment" data-fragment-index="1">
+						<img data-src="http://localhost:8000/examples/assets/day_events.png" width="85%">
+					</p>
+					
+
+				</section>
+				<!--Slide 24-->
+
+				<!--Slide 25-->
+				<section data-background-color="white" data-auto-animate>
+	
+	
+					<p class="fragment" data-fragment-index="1">
+						<img data-src="http://localhost:8000/examples/assets/day_events.png" width="85%">
+					</p>
+					
+
+				</section>
+
+				
+				<!--Slide 25-->
+
+				<!--Slide 26-->
+				<section data-background-color="white" data-auto-animate>
+					<h3>Social Interaction</h3>
+					<p class="fragment" data-fragment-index="1">What kind of Interaction?</p>
+					<p class="fragment" data-fragment-index="2">With Whom?</p>
+					<p class="fragment" data-fragment-index="3">Where?</p>
+					<p class="fragment" data-fragment-index="4">How long?</p>
+					
+
+				</section>
+				<!--Slide 26-->
+
+				<!--Slide 27-->
+				<section data-background-color="white" data-auto-animate>
+					<h3>Social Interaction</h3>
+					<p class="fragment" data-fragment-index="1">
+						<img data-src="http://localhost:8000/examples/assets/social_int_1.png" align="left" width="50%">
+						
+
+					</p>
+
+					<p class="fragment" data-fragment-index="1">
+						
+						<img data-src="http://localhost:8000/examples/assets/social_int_2.png" align="left" width="50%">
+
+					</p>
+
+					<p class="fragment" data-fragment-index="2" style="margin-left: -5%; margin-right: -5%;">Detect heads from the images using VinVL model</p>
+					<p class="fragment" data-fragment-index="3" style="margin-left: -5%; margin-right: -5%;">Filter out heads where bounding box area is below a threshold</p>
+					<p class="fragment" data-fragment-index="4" style="margin-left: -5%; margin-right: -5%;">Leverage CLIP embeddings to confirm an ongoing social social interaction</p>
+
+					
+
+				</section>
+				<!--Slide 27-->
+
+				<!--Slide 28-->
+				<section data-background-color="white" data-auto-animate>
+					<h3>Social Interaction</h3>
+					
+					<p class="fragment" data-fragment-index="1" style="margin-left: -5%; margin-right: -5%;">Use data from ConceptNet to generate 'meeting type' hypothesis and score them using the CLIP model.</p>
+					<p class="fragment" data-fragment-index="2" style="color: cadetblue; font-style: italic;">Is this a conference meeting? Is it a casual dinner? etc.</p>
+
+					<p class="fragment" data-fragment-index="3" style="margin-left: -5%; margin-right: -5%;">We tag people on basis of their clothes and related accesories</p>
+					<p class="fragment" data-fragment-index="4" style="color: cadetblue; font-style: italic;">Casual meeting with a man wear green t-shirt</p>
+					<p class="fragment" data-fragment-index="5" style="margin-left: -5%; margin-right: -5%;">We estimate the location of the interaction using GPS co-ordinates from the dataset</p>
+					
+
+					
+
+				</section>
+				<!--Slide 28-->
+
+				<!--Slide 29-->
+				<section data-background-color="white" data-auto-animate>
+					<h3>Person is at rest</h3>
+
+					<p class="fragment" data-fragment-index="1">Where?</p>
+					<p class="fragment" data-fragment-index="2">What?</p>
+					
+
+				</section>
+				<!--Slide 29-->
+
+				<!--Slide 30-->
+				<section data-background-color="white" data-auto-animate>
+					<h3>Person is at rest</h3>
+
+					<p class="fragment" data-fragment-index="1"><b>Where:</b> Our approach leverages the COMET (Commonsense Tranformers) model trained on commonsense datasets like ConceptNet and ATOMIC to generate hypothesis</p>
+					<p class="fragment" data-fragment-index="2">
+						<img data-src="http://localhost:8000/examples/assets/comet_hypo_conceptnet.png" width="90%">
+
+					</p>
+
+					<p class="fragment" data-fragment-index="3">All the hypotheses are scored using the CLIP Model and highest one is chosen</p>
+					
+
+				</section>
+				<!--Slide 30-->
+
+				<!--Slide 31-->
+				<section data-background-color="white" data-auto-animate>
+					<h3>Person is at rest</h3>
+
+					<p class="fragment" data-fragment-index="1"><b>What?</b></p>
+					<p class="fragment" data-fragment-index="1">COMET Inferences are generated based on the estimated location</p>
+					<p class="fragment" data-fragment-index="2">
+						<img data-src="http://localhost:8000/examples/assets/comet_loc_hypotheses.png" width="90%">
+
+					</p>
+					
+
+				</section>
+				<!--Slide 31-->
+
+
+				<!--Slide 32-->
+				<section data-background-color="white" data-auto-animate>
+					<h3>Person is at rest</h3>
+
+					<p class="fragment" data-fragment-index="1"><b>What?</b></p>
+					<p class="fragment" data-fragment-index="1">We also estimate fine-grained activity using hand-object interactions detected using bounding box intersection</p>
+					<p class="fragment" data-fragment-index="2">
+						<img data-src="http://localhost:8000/examples/assets/hoi_bb_example.png" width="60%">
+
+					</p>
+					
+
+				</section>
+				<!--Slide 32-->
+
+				<!--Slide 33-->
+				<section data-background-color="white" data-auto-animate>
+					<h3>Person is at rest</h3>
+
+					<p class="fragment" data-fragment-index="1"><b>What?</b></p>
+					<p class="fragment" data-fragment-index="2">
+						<img data-src="http://localhost:8000/examples/assets/hoi_hypo.png" width="70%">
+					</p>
+					
+
+				</section>
+				<!--Slide 33-->
+
+				<!--Slide 34-->
+				<section data-background-color="white" data-auto-animate>
+					<h3>Person is at rest</h3>	
+					<p class="fragment" data-fragment-index="1"><b>What?</b></p>
+					<p class="fragment" data-fragment-index="2">
+						<img data-src="http://localhost:8000/examples/assets/hoi_comet_infer2.png" width="70%">
+					</p>
+
+				</section>
+				<!--Slide 34-->
+
+				<!--Slide 35-->
+				<section data-background-color="white" data-auto-animate>
+					<h3>Person is in motion</h3>
+					
+					<p class="fragment" data-fragment-index="1">Origin and Destination?</p>
+					<p class="fragment" data-fragment-index="2">Path?</p>
+					<p class="fragment" data-fragment-index="2">Intention?</p>
+					
+
+				</section>
+				<!--Slide 35-->
+
+				<!--Slide 36-->
+				<section data-background-color="white" data-auto-animate>
+					<p style="margin-left: -5%; margin-right: -5%; text-align:left"><b>RQ 2.2:</b> What is the most effective method of employing textual story plots (from
+						Q 2.1) to generate questions that can help users achieve their information goals more
+						efficiently by guiding quicker search?</p>
+						
+
+				</section>
+				<!--Slide 36-->
+
+				<!--Slide 37-->
+				<section data-background-color="white" data-auto-animate>
+
+					<p class="fragment" data-fragment-index="1" style="margin-left: -5%; margin-right: -5%;">Human Memory is cue driven where one cue can lead to another ultimately taking us to the target information.</p>
+
+					<p class="fragment" data-fragment-index="2" style="margin-left: -5%; margin-right: -5%;">Cues serve as anchor points.</p>
+
+					<p class="fragment" data-fragment-index="3" style="margin-left: -5%; margin-right: -5%;"><b> Goal:</b> An information
+						retrieval engine capable of asking back clarification questions.</p>
+						
+
+				</section>
+				<!--Slide 37-->
+
+
+				
+				<!--Slide 40-->
+				<section data-background-color="white" data-auto-animate>
+	
+					<p class="fragment" data-fragment-index="1" style="margin-left: -5%; margin-right: -5%;"><b>Task 1: </b>Generating relevant questions given a context</p>
+
+					<p class="fragment" data-fragment-index="2" style="margin-left: -5%; margin-right: -5%;"><b>Task 2: </b>Asking the most relevant question from the list of generated questions</p>
+
+					<p class="fragment" data-fragment-index="3" style="margin-left: -5%; margin-right: -5%;">Narratives from RQ 2.1 can be leveraged here to generate the training data for our question generation model</p>
+
+					<p class="fragment" data-fragment-index="4" style="color: cadetblue; font-style: italic;">Having lunch with a man wearing a blue jacket. -> Were you having lunch with someone wearing a blue jacket?</p>
+
+				</section>
+				<!--Slide 40-->
+
+				<!--Slide 41-->
+				<section data-background-color="white" data-auto-animate>
+					<p style="margin-left: -5%; margin-right: -5%; text-align:left"><b>RQ 3:</b> What is the most effective way of integrating an interac-
+						tive questioning mechanism in an end-to-end conversational lifelog search system capable
+						of responding to user information needs across a range of scenarios?</p>
+				
+				</section>
+				<!--Slide 41-->
+
+				<!--Slide 42-->
+				<section data-background-color="white" data-auto-animate>
+					<p class="fragment" data-fragment-index="1">Proposed Conversational Search System Architecture for Lifelog Retrieval</p>
+					<p class="fragment" data-fragment-index="2">
+					<img data-src="http://localhost:8000/examples/assets/proposed_conv_search_arch.png" width="70%">
+					</p>
+				</section>
+				<!--Slide 42-->
+
+				<!--Slide 43-->
+				<section data-background-color="white" data-auto-animate>
+					<p style="margin-left: -5%; margin-right: -5%; text-align:left"><b>RQ 4:</b> What is the most effective way of migrating the conver-
+						sational search system from RQ3 to an Augmented Reality interface?</p>
+				</section>
+				<!--Slide 43-->
+
+				<!--Slide 44-->
+				<section data-background-color="white" data-auto-animate>
+					<p class="fragment" data-fragment-index="1" style="margin-left: -5%; margin-right: -5%;">Conversational Search Systems are more intuitive and a leap forward.</p>
+
+					<p class="fragment" data-fragment-index="2" style="margin-left: -5%; margin-right: -5%;">But due to the multimodal nature of the interaction, the system would need to run on a device with a screen such as laptops, desktops etc.</p>
+
+					<p class="fragment" data-fragment-index="3" style="margin-left: -5%; margin-right: -5%;"> This hugely limits its pervasivness and applicability</p>
+				</section>
+				<!--Slide 44-->
+
+				<!--Slide 45-->
+				<section data-background-color="white" data-auto-animate>
+					<p class="fragment" data-fragment-index="1" style="margin-left: -5%; margin-right: -5%;">Previous works have experimented with Virtual reality interfaces for lifelogs but it has its own downsides.</p>
+
+					<p class="fragment" data-fragment-index="2" style="margin-left: -5%; margin-right: -5%;">Migrating the conversational search system to an augmented reality interface would help alleviate the short comings</p>
+
+					<p class="fragment" data-fragment-index="3" style="margin-left: -5%; margin-right: -5%;">Can also be used to collaboratively search for information with other people; a novel way of memory retrieval and reminesence.</p>
+
+				</section>
+				<!--Slide 45-->
+
+				<section data-background-color="white" data-auto-animate>
+
+					<img data-src="http://localhost:8000/examples/assets/ar_device.png" width="100%">
+
+				</section>
+
+				<section data-background-color="white" data-auto-animate>
+
+					<img data-src="http://localhost:8000/examples/assets/google_ar.png" width="100%">
+
+				</section>
+
+				<section data-background-iframe="https://www.nreal.ai/light"
+				data-background-interactive>
+				</section>
+
+
+				
+
+
+
+
+				<section data-background-color="white" data-auto-animate>
+					<p class="fragment" data-fragment-index="1">Summary</p>
+
+					<p class="fragment" data-fragment-index="2" style="margin-left: -5%; margin-right: -5%; font-size: 30px; text-align: left;">1. In the last two years I have developed two lifelog retrieval systems which particpated in the Lifelog Search Challenges 2021 and 2022 and were ranked <b>6th</b> and <b>3rd</b> respectively competing against teams from across the globe.</p>
+
+					<p class="fragment" data-fragment-index="3" style="margin-left: -5%; margin-right: -5%; font-size: 30px; text-align: left;">2. I developed a system which participated in the Lifelog Task at the NTCIR-16 Conference and was the best performing system.</p>
+
+					<p class="fragment" data-fragment-index="4" style="margin-left: -5%; margin-right: -5%; font-size: 30px; text-align: left;">3. Published our work on Fine-tuning CLIP model for lifelog retrieval at the CBMI 2022 Conference.</p>
+
+					<p class="fragment" data-fragment-index="4" style="margin-left: -5%; margin-right: -5%; font-size: 30px; text-align: left;">4. Completely addressed RQ1 and partially addressed RQ 2 of my proposed research plan.</p>
+
+					
+			
+
+				</section>
+
+				<section data-background-color="white" data-auto-animate>
+					<p class="fragment" data-fragment-index="1">Papers Published</p>
+
+					<p class="fragment" data-fragment-index="2" style="margin-left: -5%; margin-right: -5%; text-align: left;font-size: 25px;">Naushad Alam, Yvette Graham, and Cathal Gurrin (2021). “Memento: A Prototype
+						Lifelog Search Engine for LSC’21”. In: Proceedings of the 4th Annual on Lifelog
+						Search Challenge. LSC ’21. Taipei, Taiwan: Association for Computing Machinery,
+						pp. 53–58</p>
+
+					<p class="fragment" data-fragment-index="2" style="margin-left: -5%; margin-right: -5%; text-align: left;font-size: 25px;">Naushad Alam, Yvette Graham, and Cathal Gurrin (2022). “Memento 2.0: An
+						Improved Lifelog Search Engine for LSC’22”. In: Proceedings of the 5th Annual on
+						Lifelog Search Challenge. LSC ’22. Newark, NJ, USA: Association for Computing
+						Machinery, pp. 2–7</p>
+
+					<p class="fragment" data-fragment-index="2" style="margin-left: -5%; margin-right: -5%; text-align: left;font-size: 25px;">Naushad Alam, Ahmed Alateeq, et al. (2022). “DCU at the NTCIR16 Lifelog-4
+						Task”. en. In: p. 5. </p>
+
+					<p class="fragment" data-fragment-index="2" style="margin-left: -5%; margin-right: -5%; text-align: left;font-size: 25px;">Tran Ly-Duyen, Alam Naushad, Graham Yvette, Vo Linh Khanh, Diep Nghiem Tuong, Nguyen Binh, Zhou Liting, Gurrin Cathal (2022). "An Exploration into the Benefits of the CLIP model for Lifelog
+						Retrieval". In: Proceedings of the International Conference on Content-based Multimedia Indexing. Graz, Austria.</p>
+
+						<p class="fragment" data-fragment-index="2" style="margin-left: -5%; margin-right: -5%; text-align: left;font-size: 25px;">Extended journal paper for our LSC 2021 system accepted to be published at the MTAP Journal.</p>
+			
+
+				</section>
+
+				<section data-background-color="white" data-auto-animate>
+					
+					<img data-src="http://localhost:8000/examples/assets/gantt_chart_naushad2.png" width="90%">
+				</section>
+
+
+
+				
+
+
+				
+
+				<section>
+					Thanks for listening!
 				</section>
 			</div>
 		</div>
